@@ -3,14 +3,9 @@
 
 ## How to install?
 
-### pip
-```
-pip install captcha2upload
-```
-
 ### Source
 ```
-git clone https://github.com/Mirio/captcha2upload.git
+git clone https://github.com/cdn-db/captcha2upload.git
 cd captcha2upload
 python setup.py install
 ```
@@ -32,6 +27,14 @@ captcha = CaptchaUpload(<YOURKEY>)
 idCaptcha,captchaAnswer = captcha.solve(<PATHFILE>)
 print idCaptcha
 print captchaAnswer
+```
+
+## Report Bad Captcha Answer
+```
+from captcha2upload import CaptchaUpload
+
+captcha = CaptchaUpload(<YOURKEY>)
+print captcha.report(<IDCAPTCHA>)
 ```
 
 ## Get balance
