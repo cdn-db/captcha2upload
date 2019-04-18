@@ -29,7 +29,9 @@ And get the api key:
 from captcha2upload import CaptchaUpload
 
 captcha = CaptchaUpload(<YOURKEY>)
-print captcha.solve(<PATHFILE>)
+idCaptcha,captchaAnswer = captcha.solve(<PATHFILE>)
+print idCaptcha
+print captchaAnswer
 ```
 
 ## Get balance
